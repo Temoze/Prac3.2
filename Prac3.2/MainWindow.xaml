@@ -9,12 +9,12 @@
     <Grid>
         <DataGrid x:Name="CombinedDataGrid" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" />
-                <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate}" />
-                <DataGridTextColumn Header="Customer Name" Binding="{Binding CustomerName}" />
-                <DataGridTextColumn Header="Customer Email" Binding="{Binding CustomerEmail}" />
-                <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" />
-                <DataGridTextColumn Header="Product Price" Binding="{Binding ProductPrice}" />
+                <DataGridTextColumn Header="Количество" Binding="{Binding Quantity}" />
+                <DataGridTextColumn Header="Дата заказа" Binding="{Binding OrderDate}" />
+                <DataGridTextColumn Header="Имя покупателя" Binding="{Binding CustomerName}" />
+                <DataGridTextColumn Header="Почта покупателя" Binding="{Binding CustomerEmail}" />
+                <DataGridTextColumn Header="Название товара" Binding="{Binding ProductName}" />
+                <DataGridTextColumn Header="Цена товара" Binding="{Binding ProductPrice}" />
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

@@ -27,17 +27,13 @@ namespace Prac3._2
         public MainWindow()
         {
             InitializeComponent();
-
             var orders = context.Orders.ToList();
             var customers = context.Customers.ToList();
             var products = context.Products.ToList();
-
             foreach (var order in orders)
             {
                 var customer = customers.FirstOrDefault(c => c.CustomerID == order.CustomerID);
                 var product = products.FirstOrDefault(p => p.ProductID == order.ProductID);
-
-                if (customer != null && product != null)
                 {
                     combinedDataList.Add(new CombinedData
                     {
@@ -49,9 +45,7 @@ namespace Prac3._2
                         ProductPrice = product.Price.Value
                     });
                 }
-
                 CombinedDataGrid.ItemsSource = combinedDataList;
-
             }
         }
         public class CombinedData
